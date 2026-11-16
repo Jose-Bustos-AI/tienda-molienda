@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'molienda-tienda', MOLIENDA_URL . 'assets/molienda-tienda.css', array(), MOLIENDA_VER );
 	wp_enqueue_script( 'molienda-tienda', MOLIENDA_URL . 'assets/molienda-tienda.js', array(), MOLIENDA_VER, array( 'in_footer' => true, 'strategy' => 'defer' ) );
-	wp_localize_script( 'molienda-tienda', 'MOLIENDA', array( 'consejos' => molienda_consejos() ) );
+	wp_localize_script( 'molienda-tienda', 'MOLIENDA', array( 'consejos' => molienda_consejos(), 'envioGratis' => MOLIENDA_ENVIO_GRATIS ) );
 } );
 
 /** Frase de ayuda que aparece al elegir cada molienda en la ficha del café. */
