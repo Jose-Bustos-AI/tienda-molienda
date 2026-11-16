@@ -134,7 +134,7 @@ add_filter( 'woocommerce_product_tabs', function ( $pestanas ) {
 		'title'    => 'Envíos y cambios',
 		'priority' => 30,
 		'callback' => function () {
-			echo '<h2>Envíos y cambios</h2><p>Envío estándar en 48-72 h por 3,90 €, gratis a partir de ' . (int) MOLIENDA_ENVIO_GRATIS . ' €. Envío exprés en 24 h por 6,90 €. Enviamos a toda España peninsular y Baleares.</p><p>Si un café no te convence, escríbenos en los 30 días siguientes y te lo cambiamos por otro. Los accesorios se devuelven sin usar y en su caja.</p>';
+			echo '<h2>Envíos y cambios</h2><p>Envío estándar en 48-72 h por 3,90 €, gratis a partir de ' . (int) MOLIENDA_ENVIO_GRATIS . ' €. Envío exprés en 24 h por 6,90 €. Enviamos a toda España.</p><p>Si un café no te convence, escríbenos en los 30 días siguientes y te lo cambiamos por otro. Los accesorios se devuelven sin usar y en su caja.</p>';
 		},
 	);
 	return $pestanas;

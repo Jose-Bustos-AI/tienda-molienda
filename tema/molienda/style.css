@@ -3,7 +3,7 @@ Theme Name: Molienda
 Template: twentytwentyfive
 Description: Tema hijo de la tienda de ejemplo Molienda (café de especialidad). Hecho por Dania360.
 Author: Dania360
-Version: 1.1.1
+Version: 1.1.2
 Requires at least: 6.6
 Text Domain: molienda
 */
@@ -254,7 +254,7 @@ body.woocommerce-demo-store { padding-bottom: 42px; }
 .mol-pie .mol-logo span { display: inline; margin: 0; font-size: inherit; color: inherit; }
 
 /* Tarjetas: precio y botón siempre a la misma altura */
-.woocommerce ul.products li.product .woocommerce-loop-product__link { display: flex; flex-direction: column; flex: 1; text-decoration: none; }
+.woocommerce ul.products li.product .woocommerce-loop-product__link { display: flex !important; flex-direction: column; flex: 1 1 auto; text-decoration: none; }
 .woocommerce ul.products li.product .woocommerce-loop-product__link .price { margin: auto 0 14px !important; padding-top: 10px; }
 .woocommerce ul.products li.product .button { margin-top: 0 !important; }
 
